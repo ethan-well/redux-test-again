@@ -4,12 +4,13 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducer';
 import VisibleTodoList from './containers/VisibleTodoList';
-
+import AddTodo from './containers/AddTodo';
+import App from './components/App';
 const store = createStore(rootReducer);
 
 render(
   <Provider store={store}>
-    <VisibleTodoList />
+    <App />
   </Provider>,
   document.getElementById('root')
 )
