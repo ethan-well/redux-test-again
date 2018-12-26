@@ -1,0 +1,35 @@
+{
+  "name": "redux-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack-dev-server --mode=development"
+  },
+  "author": "wewin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "babel-loader": "^8.0.0-beta.4",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-addons-perf": "^15.4.2",
+    "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.3.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "cross-fetch": "^3.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  }
+}
