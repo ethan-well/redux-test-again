@@ -11,6 +11,11 @@ const todos = (status = [], action) => {
           text: action.text
         }
       ]
+    case 'TOGGLE_TODO':
+      return status.map (
+        todo =>
+          todo.id === action.id ? { ...todo, completed: !todo.completed} : todo
+      )
     default:
       return status;
   }

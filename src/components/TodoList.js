@@ -1,12 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TodoList = ({todos}) => {
+const TodoList = ({todos, toggleTodo}) => {
   return (
     <ul>
       {
         todos.map(todo => (
-          <li key={todo.id}>{todo.text}</li>
+          <li
+            key={todo.id}
+            onClick={ () => toggleTodo(todo.id)}
+            className={todo.completed ? 'toggled' : 'no-toggled'}
+          >
+            {todo.text}
+          </li>
         ))
       }
     </ul>
