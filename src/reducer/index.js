@@ -1,3 +1,3 @@
-import todos from './todos';
+import visibilityFilters from './visibilityFilter';
 
-export default todos;
+export default visibilityFilters;

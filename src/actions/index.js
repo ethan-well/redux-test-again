@@ -1,12 +1,5 @@
-let nextNodeId = 0;
-
-export const addTodo = (text) => ({
-  type: 'ADD_TODO',
-  id: nextNodeId ++,
-  text: text
+const setVisibilityFilter = (filter) => ({
+  type: 'SET_VISIBILITY_FILTER',
+  filter
 })
 
-export const toggleTodo = id => ({
-  type: 'TOGGLE_TODO',
-  id: id
-})
