@@ -1,5 +1,3 @@
-import React from 'react';
-
 const todos = (status = [], action) => {
   switch (action.type) {
     case 'ADD_TODO':
